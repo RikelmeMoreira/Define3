@@ -22,11 +22,11 @@
 
 void main(void) 
 {
-    LED = 0 ;
+    LED  = 0 ;
     LED2 = 0 ;
-    DIR_LED = DIR_SAIDA;
-    DIR_LED2 = DIR_SAIDA;
-    DIR_BOTAO = DIR_ENTRADA;
+    DIR_LED    = DIR_SAIDA;
+    DIR_LED2   = DIR_SAIDA;
+    DIR_BOTAO  = DIR_ENTRADA;
     DIR_BOTAO2 = DIR_ENTRADA;
     
     while(1)
@@ -35,8 +35,12 @@ void main(void)
        __delay_ms(500);
        LED = 0;
        __delay_ms(500);
+       
+       LED2 = 0;
+       __delay_ms(500);
+       LED2 = 1;
+       __delay_ms(500);
     
-        
     }
        
     return;
